@@ -56,8 +56,7 @@ export default function CourseRoutes(app) {
     }
 
     const findCourseById = async (req, res) => {
-      const {courseId} = req.params.id
-      const course = await dao.findCourseById(courseId);
+      const course = await dao.findCourseById(req.params.id);
       res.json(course);
     }
 
@@ -67,8 +66,7 @@ export default function CourseRoutes(app) {
     }
 
     const updateCourse = async (req, res) => {
-      const {courseId} = req.params.id;
-      const status = await dao.updateCourse(courseId, req.body);
+      const status = await dao.updateCourse(req.params.id, req.body);
       res.json(status)
     }
 
