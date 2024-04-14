@@ -6,7 +6,7 @@ import "dotenv/config";
 import Hello from './Hello.js';
 import Lab5 from './Lab5.js';
 import CourseRoutes from './Kanbas/Courses/routes.js';
-import ModuleRoutes from './Kanbas/Modules/routes.js'
+import ModuleRoutes from './Kanbas/modules/routes.js';
 import UserRoutes from './Kanbas/Users/routes.js';
 
 
