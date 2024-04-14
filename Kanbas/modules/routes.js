@@ -1,4 +1,4 @@
-import * as dao from "../Modules/dao.js";
+import * as dao from "./dao.js";
 function ModuleRoutes(app) {
 
   const createModule = async (req, res) => {
